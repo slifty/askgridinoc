@@ -6,6 +6,36 @@
 		<script src="scripts/laurian.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: 'askgridinoc.com',
+  interval: 30000,
+  title: 'Askgridinoc.com',
+  subject: 'What they\'re saying about it',
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#000000',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    behavior: 'default'
+  }
+}).render().start();
+</script>
 		<div id="container">
 			<div id="question">
 				<h1>Ask Laurian Anything!</h1>
