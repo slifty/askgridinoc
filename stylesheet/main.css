@@ -46,7 +46,7 @@ ul li {
 	top: 5%;
 	background-image: url('Images/loginBox.png');
 	width: 500px;
-	height: 280px;
+	height: 260px;
 	background: rgba( 0, 0, 0, .5 );
 	padding: 10px;
 }
@@ -54,6 +54,7 @@ ul li {
 #response {
 	color: #ff9999;
 	font-size: 72px;
+	margin: 10px 0px;
 }
 
 #tdisplay {
