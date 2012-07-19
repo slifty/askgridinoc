@@ -5,8 +5,9 @@
 }
 
 body {
-	background: url('../images/IMAG0791.jpg');
+	background: url('../images/IMAG0791.jpg') no-repeat;
 	background-size: 100%;
+	background-color: #000;
 	color: #ffffff;
 }
 

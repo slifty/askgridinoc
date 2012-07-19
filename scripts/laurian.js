@@ -1,6 +1,11 @@
 $(function() {
 	$("#answer").hide();
+	
 	$("#askbutton").click(function() {
+		$("#questionform").submit();
+	});
+	
+	$("#questionform").submit(function() {
 		if($("#topic").val().length < 2)
 			return;
 		
@@ -20,7 +25,6 @@ $(function() {
 				$("#response").html("It's awesome");
 				break;
 		}
-		console.log("Test");
 		$("body").addClass("loading");
 		setTimeout(function() {
 			$("#container").show();
@@ -28,6 +32,7 @@ $(function() {
 			$("#answer").show();
 			$("body").removeClass("loading");
 		}, 1000 + Math.random() * 3000);
+		return false;
 	});
 	
 	$("#askagainbutton").click(function() {
