@@ -11,7 +11,7 @@ $(function() {
 		
 		
 		$("#container").hide();
-		var answer = $("#topic").val().charCodeAt(1) % 3;
+		var answer = $("#topic").val().charCodeAt(1) % 4;
 		
 		$("#tdisplay").html($("#topic").val()+"?");
 		switch(answer) {
@@ -23,6 +23,9 @@ $(function() {
 				break;
 			case 2:
 				$("#response").html("It's awesome");
+				break;
+			case 3:
+				$("#response").html("Meh");
 				break;
 		}
 		$("body").addClass("loading");
